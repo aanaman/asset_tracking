@@ -1,10 +1,6 @@
 <?php 
 error_reporting(0);
-define('DB_HOST','localhost');
-define('DB_USER','root');
-define('DB_PASS','');
-define('DB_NAME','shipping');
-$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+include ('includes/configpdo.php');
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +10,7 @@ $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Tracking Assert Info - Elite Africa</title>
+        <title>Tracking Asset Info</title>
         <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" >
         <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" >
         <link rel="stylesheet" href="css/animate-css/animate.min.css" media="screen" >
@@ -71,7 +67,7 @@ table tr:last-child td:last-child {
         </style>
 
 
-        <body style="background-image:url('bgimg/<?php echo (schoolbackgound); ?>.jpg');">
+        <body>
 
 </body>
     </head>
@@ -156,8 +152,7 @@ table tr:last-child td:last-child {
 
 
         <!-- /.panel -->
-     <!--   <p class="text-muted text-center"><small>Copyright © AkroSoft 2019 | Designed By <a href="https://www.akrohitech.com/">AKROSOFT. </a></small> </p> -->
-                                        </div>
+      <p class="text-muted text-center"><small> Developed By <a href="https://www.aanaman.me/">Abdullah. </a></small> </p>                                        </div>
         <!-- /.main-wrapper -->
 
         <!-- ========== COMMON JS FILES ========== -->
